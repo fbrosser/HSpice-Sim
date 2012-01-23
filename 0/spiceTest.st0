@@ -1,0 +1,13 @@
+***** HSPICE -- C-2009.03-SP1 32-BIT (May 25 2009) linux ******
+ Input File: spiceTest.sp
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   frebro               HOSTNAME: remote3.student.chalmers.se
+ lic: HOSTID: 001109ab3744         PID:      8409
+ lic: Using FLEXlm license file:
+ lic: 5290@synopsys1.lic.chalmers.se
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2012/2011.09
+ lic: FLOATING license(s) on SERVER synopsys1.lic.chalmers.se
+ lic:
+ lic: Release hspice token(s)
