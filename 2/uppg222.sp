@@ -1,19 +1,21 @@
-Transistormodeller, Simulering av forstarkarsteg - UPPGIFT 2.2.1
-
-.OPTIONS POST
+Transistormodeller, Simulering av forstarkarsteg - UPPGIFT 2.2.2
 
 * Modelldeklarationer
-.MODEL N NMOS Level=1 Vt0=0.7 Kp=110u Gamma=0.4 Lambda=0.04 Phi=0.7
-.MODEL P PMOS Level=1 Vt0=0.7 Kp=50u Gamma=0.57 Lambda=0.05 Phi=0.8
+.MODEL N NMOS LEVEL=1 VT0=0.7 KP=110u GAMMA=0.4 LAMBDA=0.04 PHI=0.7
 
-.PARAM SupplyV = 3.3V
+.PARAM SUPPLYV=3.3V
+.OPTIONS POST
 
-R2 Vdd Ut 3.3k
-MN1  Ut In 0 0 N L=1u W=181.5u
+R2 VDD UT 3300
+MN1 UT IN 0 0 N W=12U L=1U
 
-VVdd Vdd 0 DC SupplyV
-Vin In 0 DC SupplyV
+VVDD VDD 0 DC SUPPLYV
+VIN IN 0 DC SUPPLYV
+ 
+.print I(N1)
+.probe v(*) i(*)
 
-.DC Vin 0 SupplyV 0.1
+* Spanningssvep, Vin fran 0 till 3.3V i steg om 0.1V
+.DC VIN 0 SUPPLYV 0.1
 
 .END
