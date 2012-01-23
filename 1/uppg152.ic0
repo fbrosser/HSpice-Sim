@@ -1,0 +1,15 @@
+* "simulator" "HSPICE" 
+* "version" "C-2009.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "17:23:38 01/23/2012 "
+* "netlist" "uppg152.sp "
+* "runtitle" "j-omega-metoden - uppgift 1.5.2"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in =   0.            
++ ut =   0.            
+***   END: Saved Operating Point ***                     

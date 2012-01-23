@@ -1,0 +1,67 @@
+***** HSPICE -- C-2009.03-SP1 32-BIT (May 25 2009) linux ******
+ Input File: uppg152.sp
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   frebro               HOSTNAME: remote3.student.chalmers.se
+ lic: HOSTID: 001109ab3744         PID:      30974
+ lic: Using FLEXlm license file:
+ lic: 5290@synopsys1.lic.chalmers.se
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2012/2011.09
+ lic: FLOATING license(s) on SERVER synopsys1.lic.chalmers.se
+ lic:
+ Init: hspice initialization file: /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspic
+ init: begin read circuit files,  cpu clock=  1.00E-02
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/ad
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/behave
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/bjt
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/burr_brn
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/comlinear
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/dio
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/fet
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/lin_tech
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/pci
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/signet
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/ti
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/tline
+       option search   = /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/p
+                         arts/xilinx
+       option runlvl
+       option post
+ init: end read circuit files,  cpu clock=  1.00E-02 memory=     19 kb
+ init: begin check errors,  cpu clock=  1.00E-02
+ init: end check errors,  cpu clock=  1.00E-02 memory=     19 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.00E-02
+       establish matrix -- done,  cpu clock=  1.00E-02 memory=     19 kb
+       re-order matrix -- done,  cpu clock=  1.00E-02 memory=     19 kb
+ init: end setup matrix,  cpu clock=  1.00E-02 memory=     28 kb
+ dcop: begin dcop,  cpu clock=  1.00E-02
+ dcop: end dcop,  cpu clock=  1.00E-02 memory=     28 kb  tot_iter=       3
+ output: uppg152.tr0
+ sweep: tran tran0    begin, stop_t=  1.00E-04 #sweeps=**** cpu clock=  1.00E-02
+ tran: time= 1.0000E-05 tot_iter=      86 conv_iter=      43 cpu clock= 2.00E-02
+ tran: time= 2.0000E-05 tot_iter=     166 conv_iter=      83 cpu clock= 2.00E-02
+ tran: time= 3.0000E-05 tot_iter=     246 conv_iter=     123 cpu clock= 2.00E-02
+ tran: time= 4.0000E-05 tot_iter=     326 conv_iter=     163 cpu clock= 2.00E-02
+ tran: time= 5.0000E-05 tot_iter=     406 conv_iter=     203 cpu clock= 2.00E-02
+ tran: time= 6.0000E-05 tot_iter=     486 conv_iter=     243 cpu clock= 2.00E-02
+ tran: time= 7.0000E-05 tot_iter=     566 conv_iter=     283 cpu clock= 2.00E-02
+ tran: time= 8.0000E-05 tot_iter=     646 conv_iter=     323 cpu clock= 2.00E-02
+ tran: time= 9.0000E-05 tot_iter=     726 conv_iter=     363 cpu clock= 2.00E-02
+ tran: time= 1.0000E-04 tot_iter=     806 conv_iter=     403 cpu clock= 2.00E-02
+ sweep: tran tran0    end,  cpu clock=  2.00E-02 memory=     29 kb
+>info:         ***** hspice job concluded
+ Init: hspice initialization file: /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspic
+ lic: Release hspice token(s)
