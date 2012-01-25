@@ -7,7 +7,7 @@ Transistormodeller, Simulering av forstarkarsteg - UPPGIFT 2.2.2
 .OPTIONS POST
 
 R2 VDD UT 3300
-MN1 UT IN 0 0 N W=12U L=1U
+MN1 UT IN 0 0 N W=28.4U L=1U
 
 VVDD VDD 0 DC SUPPLYV
 VIN IN 0 DC SUPPLYV

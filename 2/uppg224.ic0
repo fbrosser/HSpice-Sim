@@ -1,0 +1,16 @@
+* "simulator" "HSPICE" 
+* "version" "C-2009.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "11:49:15 01/25/2012 "
+* "netlist" "uppg224.sp "
+* "runtitle" "transistormodeller, simulering av forstarkarsteg - uppgift 2.2.4"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in =   1.2000        
++ ut =   2.1187        
++ vdd =   3.3000        
+***   END: Saved Operating Point ***                     
