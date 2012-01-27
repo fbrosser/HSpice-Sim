@@ -1,0 +1,16 @@
+* "simulator" "HSPICE" 
+* "version" "C-2009.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "22:12:19 01/27/2012 "
+* "netlist" "uppg332.sp "
+* "runtitle" "forstarkningssimulering"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in =   1.3000        
++ ut = 600.0000m       
++ vdd =   3.3000        
+***   END: Saved Operating Point ***                     

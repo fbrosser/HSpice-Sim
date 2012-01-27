@@ -5,16 +5,16 @@ FORSTARKNINGSSIMULERING
 .Options Post
 
 * Spanningskallor
-Vut ut 0 DC SupplyV
-Vin in 0 DC SupplyV
+VVdd Vdd 0 DC SupplyV
+*Vin in 0 DC SupplyV
+Vin in 0 Sin(1.3 0.1 1MEG)
 
 * NMOS
 MN2 ut in 0 0 N W=5U L=1U
+R2 Vdd Ut 15k
 
 * DC-Simulering (Sweep)
-* .DC Vin 0 SupplyV 0.5 Vut 0 3.3 0.1
-.DC Vut 0 SupplyV 0.1 Vin 0 SupplyV 0.1
-
-.Probe IR2 = Par('-I(Vut)')
+*.DC Vin 0 SupplyV 0.1
+.Tran 10N 2U
 
 .End
