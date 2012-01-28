@@ -1,7 +1,7 @@
 BELASTNINGSSIMULERING AV FRILAGD NMOS
 
-.Model N NMOS Level=1 VT0=0.7 KP=200U
-.Param SupplyV = 3.3V
+.Model N NMOS Level=1 VT0=0.7 KP=192U Gamma=0.4 Lambda=0.04 Phi=0.7
+.Param SupplyV = 3.3
 .Options Post
 
 * Spanningskallor

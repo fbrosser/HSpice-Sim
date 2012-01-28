@@ -757,3 +757,593 @@ GrMeas:MovePoint Graph3 M:0 0 527.077301938u 0.9748458810674
 Graph:DSel
 GrMeas:Select Graph3 M:1 0 1
 GrMeas:MovePoint Graph3 M:1 0 524.99998716581u 0.99999999447124
+ScopeSigMgr:loadpffile /chalmers/users/frebro/Kretselektronik/2/uppg222.sw0 1 openonly
+# PF:8
+pf:read PF:8 v(ut)
+# WF:8:1
+Graph addsignal WF:8:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal0 add
+# Signal0
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph itemselect Signal1 rem
+Graph itemselect Signal1 add
+# Signal1
+Graph itemselect Signal0 add
+# Signal0
+Graph itemselect Signal0 add
+# Signal0
+Graph itemselect Signal1 rem
+# Signal0
+Graph delsignal Signal1
+Graph itemselect Signal0 rem
+Graph delsignal Signal0
+ScopeSigMgr:Unload 0 {{(2) uppg151.tr0}}
+wm geometry .sigmgr._PF:4 289x357+1535+626
+ScopeSigMgr:Unload 0 {{(3) uppg152.tr0}}
+Graph:DSel
+pf:read PF:8 v(vdd)
+# WF:8:2
+Graph addsignal WF:8:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph itemselect Signal3 add
+# Signal3
+Graph itemselect Signal3 rem
+Graph delsignal Signal3
+Graph:DSel
+pf:read PF:8 v(in)
+# WF:8:3
+Graph addsignal WF:8:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph itemselect Signal4 add
+# Signal4
+Graph itemselect Signal4 rem
+Graph delsignal Signal4
+Graph:DSel
+pf:read PF:8 i(vin)
+# WF:8:4
+Graph addsignal WF:8:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+pf:read PF:8 i(vvdd)
+# WF:8:5
+Graph addsignal WF:8:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal6
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal5 add
+# Signal5
+Graph itemselect Signal5 rem
+Graph delsignal Signal5
+Graph:DSel
+Graph itemselect Signal6 add
+# Signal6
+Graph itemselect Signal6 rem
+Graph delsignal Signal6
+Graph:DSel
+Graph addsignal WF:9:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal7
+Graph itemselect all rem
+Graph itemselect Signal2 add
+# Signal2
+Graph delsignal selected
+Graph addsignal WF:10:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal8
+Graph itemselect all rem
+Graph itemselect Signal7 add
+# Signal7
+Graph delsignal selected
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect AxisX(1) add
+# AxisX(1)
+Graph itemselect AxisX(1) add
+Graph:DSel
+GrMeas:AtX Graph3 Signal8 525u xyrangeAll
+# M:2
+Graph:DSel
+GrMeas:Select Graph3 M:2 0 1
+GrMeas:MovePoint Graph3 M:2 0 0.68862024780527 3.2999998570594
+GrMeas:MovePoint Graph3 M:2 0 3.2999999938243 0.16621347699776
+Graph addsignal WF:11:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal9
+GrMeas:AtX Graph3 Signal9 3.2999999938243 xyrangeAll
+# M:3
+Graph itemselect all rem
+Graph itemselect Signal8 add
+# Signal8
+Graph delsignal selected
+Graph:DSel
+GrMeas:Select Graph3 M:3 0 1
+GrMeas:MovePoint Graph3 M:3 0 2.6635542725108 2.529015169029
+Graph addsignal WF:12:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal10
+GrMeas:AtX Graph3 Signal10 2.6635542725108 xyrangeAll
+# M:4
+Graph itemselect all rem
+Graph itemselect Signal9 add
+# Signal9
+Graph delsignal selected
+Graph addsignal WF:13:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal11
+GrMeas:AtX Graph3 Signal11 2.6635542725108 xyrangeAll
+# M:5
+Graph itemselect all rem
+Graph itemselect Signal10 add
+# Signal10
+Graph delsignal selected
+Graph addsignal WF:14:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal12
+GrMeas:AtX Graph3 Signal12 2.6635542725108 xyrangeAll
+# M:6
+Graph itemselect all rem
+Graph itemselect Signal11 add
+# Signal11
+Graph delsignal selected
+Graph:DSel
+Graph:Select Graph3
+Graph axisconfig {AxisY(0,0) AxisX(1)} -range {{3.2531442403052 3.2863474466589} {0.4593 0.68862}}
+Graph:DSel
+Graph axisconfig {AxisX(1) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Graph:DSel
+GrMeas:AtX Graph3 Signal12 525u xyrangeAll
+# M:7
+Graph:DSel
+GrMeas:Select Graph3 M:7 0 1
+GrMeas:MovePoint Graph3 M:7 0 2.2225375671446 0.034031202068781
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph3 M:7 0 1
+GrMeas:DelMfromMenu Graph3 M:7
+Graph:DSel
+GrMeas:Select Graph3 M:6 0 1
+GrMeas:MovePoint Graph3 M:6 0 0.93922465992416 1.323964681509
+Graph:DSel
+Graph addsignal WF:15:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal13
+GrMeas:AtX Graph3 Signal13 0.93922465992416 xyrangeAll
+# M:8
+Graph itemselect all rem
+Graph itemselect Signal12 add
+# Signal12
+Graph delsignal selected
+Graph:DSel
+GrMeas:Select Graph3 M:8 0 1
+GrMeas:MovePoint Graph3 M:8 0 0.82752427617458 2.6397544254553
+Graph addsignal WF:16:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal14
+GrMeas:AtX Graph3 Signal14 0.82752427617458 xyrangeAll
+# M:9
+Graph itemselect all rem
+Graph itemselect Signal13 add
+# Signal13
+Graph delsignal selected
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph axisconfig {AxisY(0,0) AxisX(1)} -range {{0.70598398145868 0.68701072068515} {1.3817 1.4021}}
+Graph axisconfig {AxisX(1) AxisY(0,0)} -range {all all} -zoomed {0 0}
+Graph:DSel
+GrMeas:Select Graph3 M:9 0 1
+GrMeas:MoveText Graph3 M:9 0 229 539
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph3 M:9 0 1
+GrMeas:MoveText Graph3 M:9 0 -98 195
+GrMeas:MovePoint Graph3 M:9 0 1.1846622737833 1.9869068169232
+GrMeas:MoveText Graph3 M:9 0 -196 -21
+GrMeas:MovePoint Graph3 M:9 0 1.400000017998 0.7032013995045
+pf:read PF:16 i(vin)
+# WF:16:2
+Graph addsignal WF:16:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal15
+pf:read PF:16 i(vvdd)
+# WF:16:3
+Graph addsignal WF:16:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal16
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal15 add
+# Signal15
+Graph itemselect Signal15 add
+# Signal15
+Graph itemselect Signal15 rem
+Graph delsignal Signal15
+Graph:DSel
+Graph:DSel
+Graph:DSel
+Graph itemselect Signal16 add
+# Signal16
+Graph sigconfig Signal16 -region 0 -rgnindex 1
+Graph itemselect Signal16 add
+# Signal16
+Graph itemselect Signal16 add
+# Signal16
+Graph itemselect Signal16 rem
+Graph delsignal Signal16
+Graph:DSel
+Graph addsignal WF:17:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal17
+GrMeas:AtX Graph3 Signal17 1.400000017998 xyrangeAll
+# M:10
+Graph itemselect all rem
+Graph itemselect Signal14 add
+# Signal14
+Graph delsignal selected
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+Graph:DSel
+Graph:DSel
+GrMeas:Select Graph3 M:10 0 1
+GrMeas:MovePoint Graph3 M:10 0 0.99760716303107 0.33755068399699
+GrMeas:MoveText Graph3 M:10 0 -174 -36
+GrMeas:MovePoint Graph3 M:10 0 0.99999997397605 0.29966351176833
+Graph:DSel
+Graph:Select Graph3
+Graph:DSel
+pf:read PF:17 i(vin)
+# WF:17:2
+Graph addsignal WF:17:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal18
+pf:read PF:17 i(vvdd)
+# WF:17:3
+Graph addsignal WF:17:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal19
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal19 add
+# Signal19
+Graph itemselect Signal19 add
+# Signal19
+Graph itemselect Signal19 rem
+Graph delsignal Signal19
+Graph:DSel
+Graph itemselect Signal18 add
+# Signal18
+Graph itemselect Signal18 add
+# Signal18
+Graph itemselect Signal18 rem
+Graph delsignal Signal18
+Graph:DSel
+Graph:DSel
+Graph addsignal WF:18:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal20
+GrMeas:AtX Graph3 Signal20 0.99999997397605 xyrangeAll
+# M:11
+Graph itemselect all rem
+Graph itemselect Signal17 add
+# Signal17
+Graph delsignal selected
+Graph:DSel
+GrMeas:Select Graph3 M:11 0 1
+GrMeas:MovePoint Graph3 M:11 0 1.3107235666893 1.8088864397794
+pf:read PF:18 i(vvdd)
+# WF:18:2
+Graph addsignal WF:18:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal21
+Graph addsignal WF:19:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal22
+GrMeas:AtX Graph3 Signal22 1.3107235666893 xyrangeAll
+# M:12
+Graph itemselect all rem
+Graph itemselect Signal20 add
+# Signal20
+Graph itemselect Signal21 add
+# Signal21
+Graph delsignal selected
+pf:read PF:19 i(vdd)
+# WF:19:2
+Graph addsignal WF:19:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal23
+pf:read PF:19 i(vin)
+# WF:19:3
+Graph addsignal WF:19:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal24
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal24 add
+# Signal24
+Graph itemselect Signal24 add
+# Signal24
+Graph itemselect Signal24 rem
+Graph delsignal Signal24
+Graph:DSel
+pf:read PF:19 v(in)
+# WF:19:4
+Graph addsignal WF:19:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal25
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal25 add
+# Signal25
+Graph itemselect Signal25 add
+# Signal25
+Graph itemselect Signal25 rem
+Graph delsignal Signal25
+Graph:DSel
+Graph addsignal WF:20:2 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal26
+GrMeas:AtX Graph3 Signal26 1.3107235666893 xyrangeAll
+# M:13
+Graph addsignal WF:20:1 -region 1 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill yellow -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label i(vdd) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal27
+Graph itemselect all rem
+Graph itemselect Signal22 add
+# Signal22
+Graph itemselect Signal23 add
+# Signal23
+Graph delsignal selected
+Graph addsignal WF:21:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal28
+GrMeas:AtX Graph3 Signal28 1.3107235666893 xyrangeAll
+# M:14
+Graph itemselect all rem
+Graph itemselect Signal26 add
+# Signal26
+Graph itemselect Signal27 add
+# Signal27
+Graph delsignal selected
+pf:read PF:21 i(vin)
+# WF:21:2
+Graph addsignal WF:21:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal29
+pf:read PF:21 i(vvdd)
+# WF:21:3
+Graph addsignal WF:21:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal30
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal29 add
+# Signal29
+Graph itemselect Signal29 rem
+Graph delsignal Signal29
+Graph:DSel
+Graph addsignal WF:22:2 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal31
+GrMeas:AtX Graph3 Signal31 1.3107235666893 xyrangeAll
+# M:15
+Graph addsignal WF:22:1 -region 1 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill green -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label i(vvdd) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal32
+Graph itemselect all rem
+Graph itemselect Signal28 add
+# Signal28
+Graph itemselect Signal30 add
+# Signal30
+Graph delsignal selected
+pf:read PF:22 v(vdd)
+# WF:22:3
+Graph addsignal WF:22:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal33
+pf:read PF:22 v(ut)
+# WF:22:2
+Graph addsignal WF:22:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal34
+pf:read PF:22 v(in)
+# WF:22:4
+Graph addsignal WF:22:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal35
+pf:read PF:22 v(0)
+# WF:22:5
+Graph addsignal WF:22:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal36
+pf:read PF:22 i(vin)
+# WF:22:6
+Graph addsignal WF:22:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal37
+pf:read PF:22 i(vvdd)
+# WF:22:1
+Graph addsignal WF:22:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal38
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal37 add
+# Signal37
+Graph itemselect Signal37 add
+# Signal37
+Graph itemselect Signal37 rem
+Graph delsignal Signal37
+Graph:DSel
+Graph itemselect Signal36 add
+# Signal36
+Graph itemselect Signal36 rem
+Graph delsignal Signal36
+Graph:DSel
+Graph itemselect Signal35 add
+# Signal35
+Graph itemselect Signal35 rem
+Graph delsignal Signal35
+Graph:DSel
+Graph itemselect Signal34 add
+# Signal34
+Graph itemselect Signal34 rem
+Graph delsignal Signal34
+Graph:DSel
+Graph itemselect Signal33 add
+# Signal33
+Graph itemselect Signal33 rem
+Graph delsignal Signal33
+Graph:DSel
+Graph itemselect Signal38 add
+# Signal38
+Graph itemselect Signal38 rem
+Graph delsignal Signal38
+Graph:DSel
+GrMeas:Select Graph3 M:15 0 1
+GrMeas:MovePoint Graph3 M:15 0 1.3896115848058 2.1723291467482
+GrMeas:AtX Graph3 Signal32 1.6 xyrangeAll
+# M:16
+GrMeas:AtX Graph3 Signal31 1.6 xyrangeAll
+# M:17
+Graph:Select Graph3
+Graph delsignal selected
+Graph:DSel
+pf:read PF:22 v(in)
+# WF:22:4
+Graph addsignal WF:22:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal39
+Graph:Select Graph3
+Graph:DSel
+Graph itemselect Signal39 add
+# Signal39
+Graph itemselect Signal39 add
+# Signal39
+Graph itemselect Signal39 rem
+Graph delsignal Signal39
+Graph:DSel
+Graph addsignal WF:23:2 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal40
+GrMeas:AtX Graph3 Signal40 1.6 xyrangeAll
+# M:18
+Graph addsignal WF:23:1 -region 1 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill green -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label i(vvdd) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal41
+GrMeas:AtX Graph3 Signal41 1.6 xyrangeAll
+# M:19
+Graph itemselect all rem
+Graph itemselect Signal31 add
+# Signal31
+Graph itemselect Signal32 add
+# Signal32
+Graph delsignal selected
+Graph addsignal WF:24:2 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill cyan -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal42
+GrMeas:AtX Graph3 Signal42 1.6 xyrangeAll
+# M:20
+Graph addsignal WF:24:1 -region 1 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill green -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label i(vvdd) -xaxis 1 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal43
+GrMeas:AtX Graph3 Signal43 1.6 xyrangeAll
+# M:21
+Graph itemselect all rem
+Graph itemselect Signal40 add
+# Signal40
+Graph itemselect Signal41 add
+# Signal41
+Graph delsignal selected
+Graph:Select Graph3
+ScopeSigMgr:Unload 0 {{(4) uppg222.sw0}}
+ScopeSigMgr:loadpffile /chalmers/users/frebro/Kretselektronik/2/uppg223.sw0 1 openonly
+# PF:25
+wm geometry .sigmgr._PF:25 289x357+1627+546
+wm geometry .sigmgr._PF:25 289x357+1590+563
+wm geometry .sigmgr._PF:25 289x357+1575+588
+wm geometry .sigmgr._PF:25 289x357+1565+604
+wm geometry .sigmgr._PF:25 289x357+1563+609
+wm geometry .sigmgr._PF:25 289x357+1562+613
+GrXY:NewGraph
+# Graph4
+pf:read PF:25 v(ut)
+# WF:25:1
+Graph addsignal WF:25:1 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal0
+pf:read PF:25 v(in)
+# WF:25:2
+Graph addsignal WF:25:2 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal1
+Mdi:Resize 1414 853
+Mdi:Move 5 5
+pf:read PF:25 v(vdd)
+# WF:25:3
+Graph addsignal WF:25:3 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal2
+pf:read PF:25 v(0)
+# WF:25:4
+Graph addsignal WF:25:4 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal3
+pf:read PF:25 i(vvdd)
+# WF:25:5
+Graph addsignal WF:25:5 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal4
+pf:read PF:25 i(vin)
+# WF:25:6
+Graph addsignal WF:25:6 -region new -yview real(y) -xview real(x) -tracehi 2
+# Signal5
+Graph:Select Graph4
+Graph:DSel
+Graph itemselect Signal5 add
+# Signal5
+Graph itemselect Signal5 add
+# Signal5
+Graph itemselect Signal5 rem
+Graph delsignal Signal5
+Graph:DSel
+Graph itemselect Signal3 add
+# Signal3
+Graph itemselect Signal3 rem
+Graph delsignal Signal3
+Graph:DSel
+Graph itemselect Signal2 add
+# Signal2
+Graph itemselect Signal2 rem
+Graph delsignal Signal2
+Graph:DSel
+Graph itemselect Signal1 add
+# Signal1
+Graph itemselect Signal1 rem
+Graph delsignal Signal1
+Graph:DSel
+Graph itemselect Signal4 add
+# Signal4
+Graph itemselect Signal4 add
+# Signal4
+Graph itemselect Signal4 rem
+Graph delsignal Signal4
+GrMeas:AtX Graph4 Signal0 1.6 xyrangeAll
+# M:0
+Graph:DSel
+GrMeas:Select Graph4 M:0 0 1
+GrMeas:MovePoint Graph4 M:0 0 1.4999999672321 0.60047176346256
+GrMeas:AtX Graph4 Signal0 0.7 xyrangeAll
+# M:1
+Graph:DSel
+GrMeas:Select Graph4 M:1 0 1
+GrMeas:MovePoint Graph4 M:1 0 0.70000003489969 3.2999997861705
+GrMeas:MovePoint Graph4 M:1 0 0.80000003689778 3.2503663337537
+GrMeas:AtX Graph4 Signal0 1.2 xyrangeAll
+# M:2
+GrMeas:AtX Graph4 Signal0 1.1 xyrangeAll
+# M:3
+GrMeas:AtX Graph4 Signal0 1.3 xyrangeAll
+# M:4
+Graph addsignal WF:26:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill green -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal6
+GrMeas:AtX Graph4 Signal6 1.4999999672321 xyrangeAll
+# M:5
+GrMeas:AtX Graph4 Signal6 0.80000003689778 xyrangeAll
+# M:6
+GrMeas:AtX Graph4 Signal6 1.2 xyrangeAll
+# M:7
+GrMeas:AtX Graph4 Signal6 1.1 xyrangeAll
+# M:8
+GrMeas:AtX Graph4 Signal6 1.3 xyrangeAll
+# M:9
+Graph itemselect all rem
+Graph itemselect Signal0 add
+# Signal0
+Graph delsignal selected
+Graph addsignal WF:27:1 -region 0 -yview real(y) -xview real(x) -rainbow 0 -rbcolors {} -fill green -linestyle - -width 1 -symbol {} -symwidth 10 -bar {} -barwidth 0 -baseline 0.0 -stipple {} -label v(ut) -xaxis 0 -yaxis 0 -tracehi 2 -bus {} -segdisp y -monotonicdisp 0
+# Signal7
+GrMeas:AtX Graph4 Signal7 1.4999999672321 xyrangeAll
+# M:10
+GrMeas:AtX Graph4 Signal7 0.80000003689778 xyrangeAll
+# M:11
+GrMeas:AtX Graph4 Signal7 1.2 xyrangeAll
+# M:12
+GrMeas:AtX Graph4 Signal7 1.1 xyrangeAll
+# M:13
+GrMeas:AtX Graph4 Signal7 1.3 xyrangeAll
+# M:14
+Graph itemselect all rem
+Graph itemselect Signal6 add
+# Signal6
+Graph delsignal selected

@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "C-2009.03-SP1 32-BIT"
 * "format" "HSP"
-* "rundate" "22:12:19 01/27/2012 "
+* "rundate" "14:28:30 01/28/2012 "
 * "netlist" "uppg332.sp "
 * "runtitle" "forstarkningssimulering"
 * time =    0.            
