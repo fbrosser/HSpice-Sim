@@ -1,0 +1,147 @@
+Using: /usr/bin/time -p /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/linux/hspice uppg222.sp
+ ****** HSPICE -- C-2009.03-SP1 32-BIT (May 25 2009) linux ******               
+  Copyright (C) 2009 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: uppg222.sp                                                        
+ lic:  
+ lic: FLEXlm: v8.5b 
+ lic: USER:   frebro               HOSTNAME: remote3.student.chalmers.se 
+ lic: HOSTID: 001109ab3744         PID:      23300 
+ lic: Using FLEXlm license file: 
+ lic: 5290@synopsys1.lic.chalmers.se 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 31-dec-2012/2011.09 
+ lic: FLOATING license(s) on SERVER synopsys1.lic.chalmers.se 
+ lic:   
+ Init: read install configuration file: /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/meta.cfg
+ Init: hspice initialization file: /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/hspice.ini
+ .option runlvl
+1****** HSPICE -- C-2009.03-SP1 32-BIT (May 25 2009) linux ******               
+ ******  
+ transistormodeller, simulering av forstarkarsteg - uppgift 2.2.1
+
+  ******  mos   model parameters tnom=  25.000 temp=  25.000 *****
+ ***************************************************************************
+ *** common model parameters  model name:   0:n        model type:nmos   ***
+ ***************************************************************************
+     names  values   units     names  values   units     names  values   units
+     -----  ------   -----     -----  ------   -----     -----  ------   -----
+
+   1*** geometry parameters ***
+       ld=   0.    meters      lmlt=   1.00                wd=   0.    meters 
+     wmlt=   1.00                xl=   0.    meters        xw=   0.    meters 
+     lref=   0.    meters      wref=   0.    meters      lref=   0.    meters 
+     wref=   0.    meters     xlref=   0.    meters     xwref=   0.    meters 
+     lmin=   0.    meters      wmin=   0.    meters      lmax=   0.    meters 
+     wmax=   0.    meters 
+
+   2*** threshold voltage parameters ***
+      vto= 700.00m volts        nss=   0.    1/cm**2      tpg=   1.00         
+      phi= 700.00m volts      gamma= 400.00m v**0.5      bulk=  gnd           
+    ngate=   0.    cm**3       nsub= 5.7e+14 1/cm**3   delvto=   0.    volts  
+
+   3*** gate overlap capacitance parameters ***
+     cgbo=   0.    f/meter     cgdo=   0.    f/meter     cgso=   0.    f/meter
+     meto=   0.    meters 
+
+   4*** gate capacitance parameters ***
+    capop=   2.00               cf1=   0.    volts        cf2= 100.00m volts  
+      cf3=   1.00  volts        cf4=  50.00               cf5= 666.67m        
+      cf6= 500.00               xqc= 500.00m              tox= 100.00n meters 
+      cox= 345.31u f/m**2 
+
+   5*** diffusion parasitic parameters ***
+      acm=   0.                  is=  10.00f amps          js=   0.    a/m**2 
+      jsw=   0.    amp/m        nds=   1.00               cbd=   0.    farad  
+      cbs=   0.    farad         cj=  77.21u f/m**2      cjsw=   0.    f/m    
+   cjgate=   0.    f/m           mj= 500.00m             mjsw= 330.00m        
+       pb= 800.00m volts        php= 800.00m volts         tt=   0.    secs   
+     hdif=   0.    meters      ldif=   0.    meters        rd=   0.    ohms   
+       rs=   0.    ohms         rsh=   0.    ohms/sq       fc=   0.           
+    alpha=   0.                 vcr=   0.    volts      iirat=   0.           
+      rdc=   0.    ohms         rsc=   0.    ohms           n=   1.00         
+     vnds=  -1.00  volts  
+
+   6*** temperature effect parameters ***
+     tlev=   0.               tlevc=   0.                  eg=   1.11  ev     
+     gap1= 702.00u ev/deg      gap2=   1.11k deg          xti=   0.           
+      bex=  -1.50               tcv=   0.    v/deg k      trd=   0.    /deg   
+      trs=   0.    /deg         cta=   0.    /deg         ctp=   0.    /deg   
+
+   7*** noise parameters ***
+       kf=   0.                  af=   1.00              nlev=   2.00         
+   gdsnoi=   1.00         
+
+   ***  level  1  model parameters  ***
+
+   lambda=  40.00m /v            kp= 110.00u a/v**2 
+
+ **warning** node specified impossible for element     0:n1               branch - output ignored
+
+ 
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+
+          ***** job concluded
+1****** HSPICE -- C-2009.03-SP1 32-BIT (May 25 2009) linux ******               
+ ******  
+ transistormodeller, simulering av forstarkarsteg - uppgift 2.2.1
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+ 
+ 
+ ******  Machine Information  ******
+ CPU:
+ model name	: Dual Core AMD Opteron(tm) Processor 270
+ cpu MHz	: 1000.000
+ 
+ OS:
+ Linux version 2.6.39-1.el5.elrepo (mockbuild@Build64R5) (gcc version 4.1.2 2008
+ 0704 (Red Hat 4.1.2-50)) #1 SMP PREEMPT Fri Jun 3 19:17:28 EDT 2011
+
+
+  ******  HSPICE Threads Information  ******
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     4
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       5 # elements   =       5
+  # resistors   =       1 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       1 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  dc sweep           0.00          34          98
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           total memory used          161  kbytes
+           total cpu time            0.01 seconds
+           total elapsed time        0.11 seconds
+           job started at     20:48:59 01/23/2012
+           job ended   at     20:48:59 01/23/2012
+
+
+ Init: hspice initialization file: /chalmers/sw/sup/snp/hspice-2009.03-SP1/hspice/hspice.ini
+ lic: Release hspice token(s) 
