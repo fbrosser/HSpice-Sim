@@ -17,7 +17,7 @@ MN2 ut in 0 0 N W=50U L=1U
 R2 Vdd ut 75k
 C2 ut 0 20f
 
-* AC-Analys
+* AC-Analys 1 - 1GHz
 .AC DEC 10 1 1G
 
 .End
