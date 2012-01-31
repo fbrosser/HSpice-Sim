@@ -10,15 +10,20 @@ Simulering av CMOS-Inverterare
 
 * Spanningskallor
 VVdd Vdd 0 DC SupplyV
-Vin in 0 DC SupplyV
+* Vin in 0 DC SupplyV
 
 * NMOS
-MN1 ut in 0 0 N W=2u L=1u
+MN1 0 in ut 0 N W=2u L=1u
 
 * PMOS
-MP1 ut in Vdd 0 P W=2u L=1u
+MP1 Vdd in ut Vdd P W=4.4u L=1u
+
+Vin in 0 SupplyV
 
 * DC Sweep, Vin 0 -> 3.3V, 1mV inkrement
-.DC Vin 0 SupplyV 100m
+.DC Vin Start=0 Stop=SupplyV Step=10m
 
+* Transientsimulering
+.Tran 1ps 8ns
+ 
 .End
