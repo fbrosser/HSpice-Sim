@@ -21,7 +21,7 @@ MP1 Vdd in ut Vdd P W=4.4u L=1u
 Vin in 0 SupplyV
 
 * DC Sweep, Vin 0 -> 3.3V, 1mV inkrement
-.DC Vin Start=0 Stop=SupplyV Step=10m
+.DC Vin Start=0 Stop=SupplyV Step=1m
 
 * Transientsimulering
 .Tran 1ps 8ns

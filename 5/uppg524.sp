@@ -13,17 +13,19 @@ VVdd Vdd 0 DC SupplyV
 * Vin in 0 DC SupplyV
 
 * NMOS
-MN1 0 in ut 0 N W=2u L=1u
+MN1 ut in 0 0 N W=2u L=1u
 
 * PMOS
 MP1 Vdd in ut Vdd P W=4.4u L=1u
 
-Vin in 0 pulse(0 3.3 100ps 100ps 100ps 2ns 4ns)
+Vin in 0 SupplyV
+
+.PROBE IVDD=PAR('-I(VVDD)')
 
 * DC Sweep, Vin 0 -> 3.3V, 1mV inkrement
-.DC Vin Start=0 Stop=SupplyV Step=10m
+.DC Vin Start=0 Stop=SupplyV Step=1m
 
 * Transientsimulering
-.Tran 1ps 8ns
+*.Tran 1ps 8ns
  
 .End
