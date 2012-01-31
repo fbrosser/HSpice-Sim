@@ -1,8 +1,8 @@
 Simulering av CMOS-Inverterare
 
-*.Model N NMOS Level=1 VT0=0.7 
-*+ KP = 192
-.Model N NMOS Level=1 VT0=0.7 KP=110U Gamma=0.4 Lambda=0.04 Phi=0.7
+* MOSFET-modeller
+.MODEL N NMOS LEVEL=1 VT0=0.7 KP=110U GAMMA=0.4 LAMBDA=0.04 PHI=0.7
+.MODEL P PMOS LEVEL=1 VT0=-0.7 KP=50U GAMMA=0.57 LAMBDA=0.05 PHI=0.8
 
 * Matningsspanning
 .Param SupplyV = 3.3V
@@ -10,14 +10,15 @@ Simulering av CMOS-Inverterare
 
 * Spanningskallor
 VVdd Vdd 0 DC SupplyV
-Vin in 0 AC Sin(0.81 0.01 100MEG)
+Vin in 0 DC SupplyV
 
 * NMOS
-MN2 ut in 0 0 N W=50U L=1U
-R2 Vdd ut 75k
-C2 ut 0 20f
+MN1 ut in 0 0 N W=50u L=1u
 
-* AC-Analys 1 - 1GHz
-.AC DEC 10 1 1G
+* PMOS
+MP1 Vdd in ut 0 P W=2u L=1u
+
+* DC Sweep, Vin 0 -> 3.3V, 1mV inkrement
+.DC Vin 0 SupplyV 1m
 
 .End
