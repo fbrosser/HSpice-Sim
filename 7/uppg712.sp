@@ -13,7 +13,7 @@ Transientanalys av uppladdningströmmen genom PMOS
 CL ut 0 20f
 
 * PMOS
-MP1 Vdd in ut Vdd P W=4.4u L=1u
+MP1 Vdd in ut Vdd P W=8.8u L=1u
 
 * Spanningskallor
 VVdd Vdd 0 DC SupplyV
