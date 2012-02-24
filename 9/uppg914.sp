@@ -1,4 +1,4 @@
-Simulering med enkel kapacitiv ledningsmodell
+Simulering med distribuerad RC-ledningsmodell
 
 * MOSFET-modeller
 .MODEL N NMOS Level=1 VT0=0.7 Kp=110u Gamma=0.4 Lambda=0.04 Phi=0.7

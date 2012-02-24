@@ -1,4 +1,4 @@
-simulering med ideal ledare
+Simulering med ideal ledare
 
 * MOSFET-modeller
 .MODEL N NMOS Level=1 VT0=0.7 Kp=110u Gamma=0.4 Lambda=0.04 Phi=0.7
