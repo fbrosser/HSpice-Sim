@@ -78,7 +78,7 @@ MN1 ledIn in 0 0 N W=10u L=1u
 XLC_10_10Seg1 ledIn ledUt LC_10_10Seg
 
 * RL
-RL ledUt 0 9999999999999999
+RL ledUt 0 9999999999999999MEG
 
 * Logisk Insignal och matningsspanning
 VVdd Vdd 0 DC SupplyV

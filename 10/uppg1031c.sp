@@ -15,12 +15,14 @@ I-V for PMOS i uppgift 10.2.2
 
 .Options CAPTAB Post
 
+.IC Vs = SupplyV Vr = SupplyV
+
 **************************************************************************
 * NAT
 
 * PMOS 
 * Drain Gate Souce Bbody
-MP1 Vs Vin Vdd Vdd P W=1u L=1u
+* MP1 Vs Vin Vdd Vdd P W=1u L=1u
 MN1 Vs Vin 0 0 N W=10u L=1u
 
 * RL
